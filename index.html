@@ -14,12 +14,15 @@
       background-color: #fce4ec;
       margin: 0;
       font-family: Arial, sans-serif;
+      padding: 0 15px; /* Adiciona um pouco de padding para evitar texto colado nas bordas em dispositivos móveis */
+      box-sizing: border-box;
     }
     .loader-container {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      text-align: center; /* Garante que o texto seja centralizado */
     }
     .loader {
       width: 100px;
@@ -48,7 +51,6 @@
   <div class="loader-container">
     <div class="loading-text">Carregando sua surpresa... Por favor, aguarde!!</div>
     <div class="loader"></div>
-    
   </div>
 
   <script>
