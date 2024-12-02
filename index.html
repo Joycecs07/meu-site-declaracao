@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carregando...</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Organiza o texto e a barra de carregamento na vertical */
+      height: 100vh;
+      background-color: #fce4ec;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .loader-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .loader {
+      width: 100px;
+      height: 100px;
+      border: 10px solid #f8bbd0;
+      border-top: 10px solid #e91e63;
+      border-radius: 50%;
+      animation: spin 1.5s linear infinite;
+    }
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .loading-text {
+      font-size: 18px;
+      margin-top: 15px;
+      color: #8e24aa; /* Cor roxa para a frase */
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loading-text">Carregando sua surpresa... Por favor, aguarde!!</div>
+    <div class="loader"></div>
+    
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "contrato.html"; // Vai para a próxima página
+    }, 3000); // 3 segundos
+  </script>
+</body>
+</html>

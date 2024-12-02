@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrato</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fdf5e6;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .contract-container {
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 30px;
+      border: 2px dashed #8b4513; /* Borda desenhada */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #8b4513;
+    }
+    p {
+      color: #6b4226;
+      margin: 10px 0;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #4caf50;
+      color: white;
+    }
+    .no {
+      background-color: #f44336;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="contract-container">
+    <h1>Eu vou fazer um contrato: 📝</h1> 
+    <p>Se liga nas cláusulas, ⚖️</p>
+    <p>Assina aqui embaixo, ✍️</p>
+    <p>E não muda nada! 🚫</p>
+    
+    <p><strong>Cláusula 1:</strong> Acordar com um beijo todo dia de manhã é obrigatório. 😘🌅</p>
+    <p><strong>Cláusula 2:</strong> Aceitar café na cama todos os dias, sim, todos os dias! ☕️🛏️</p>
+    <p><strong>Cláusula 3:</strong> Sempre me amar, sem desculpas. 💖</p>
+    <p><strong>Cláusula 4:</strong> Fazer carinho no fim do dia é essencial. 🤗💫</p>
+    <p><strong>Cláusula 5:</strong> Nunca esquecer o quanto eu te amo, mesmo nos dias mais difíceis. ❤️😢</p>
+    <p><strong>Cláusula 6:</strong> Amar um ao outro, mesmo quando a raiva bater, sem desistir. 😡💪❤️</p>
+    <p><strong>Cláusula 7:</strong> Nunca fugir, não importa o que aconteça. Estamos aqui para enfrentar tudo juntos. 👊💑</p>
+    <p><strong>Cláusula 8:</strong> Iremos cuidar um do outro sempre, em todas as situações. 🧑‍🤝‍🧑❤️</p>
+    <p><strong>Cláusula 9:</strong> Fidelidade, lealdade, sinceridade e honestidade. Sempre contar tudo e ser um livro aberto. 📖🔒</p>
+
+    <p>E só pra deixar bem claro... ⚡</p>
+    <p>Este contrato é <strong>vitalício</strong>. ⏳💍</p>
+    <p>'Cê tá amarrado aqui comigo, 💘</p>
+    <p>Nesse contrato da paixão. 💓</p>
+
+    <p>A <strong>rescisão</strong>? Um milhão. 💰</p>
+    <p>De onde 'cê vai tirar isso? 🤔💸</p>
+
+    <div class="button-container">
+      <button class="yes" onclick="acceptContract()">Sim</button>
+      <button class="no" onclick="moveButton(this)">Não</button>
+    </div>
+  </div>
+
+  <script>
+    function moveButton(button) {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+      button.style.left = x + "px";
+      button.style.top = y + "px";
+    }
+
+    function acceptContract() {
+      window.location.href = "surpresa.html"; // Vai para a próxima página
+    }
+  </script>
+</body>
+</html>
